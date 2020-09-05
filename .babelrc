@@ -1,0 +1,24 @@
+{
+  "presets": ["@babel/preset-env"],
+  "ignore": ["**/*.test.js", "/node_modules/"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./app"],
+        "alias": {
+          "controllers": "./app/src/controllers",
+          "database": "./app/src/database",
+          "models": "./app/src/database/models",
+          "routes": "./app/src/routes",
+          // "seeders": "./app/src/seeders",
+          "helpers": "./app/src/helpers",
+          "config": "./app/config",
+          "services": "./app/src/services",
+          "middleware": "./app/src/middleware"
+          // "requests": "./src/requests"
+        }
+      }
+    ]
+  ]
+}
